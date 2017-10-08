@@ -1,4 +1,4 @@
-var remoteUrl = "http://aiwvu.ml:6000/";
+var remoteUrl = "http://aiwvu.ml:5001/";
 
 function click() {
   chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
