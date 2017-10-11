@@ -6,7 +6,6 @@ function click() {
     var category = document.getElementById("category").value;
     var urlToPost = remoteUrl + "?url=" + currentUrl + "&category=" + category;
     send(urlToPost);
-    window.close();
   });
 }
 
@@ -15,6 +14,7 @@ function send(url) {
 	xmlhttp.open('GET', url, true);
 	xmlhttp.onreadystatechange = function() {
 	    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {}
+	    window.close();
 	};
 	xmlhttp.send(null);
 }
